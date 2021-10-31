@@ -1,0 +1,128 @@
+:root {
+    --clr-1: hsl(225, 100%, 94%);
+    --clr-2: hsl(245, 75%, 52%);
+    --clr-3: hsl(225, 100%, 98%);
+    --clr-4: hsl(224, 23%, 55%);
+    --clr-5: hsl(223, 47%, 23%);
+    --clr-hov: hsl(245, 40%, 49%);
+
+    --fs-p: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: var(--clr-5);
+    font-size: var(--fs-p);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--clr-1);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+}
+
+.main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 450px;
+    min-height: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 20px 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 15px 24px;
+}
+
+.img-top {
+    border-radius: 20px 20px 0 0;
+}
+
+.intro {
+    text-align: center;  
+}
+
+.info {
+    text-align: center;
+    padding: 10px 20px 0 20px;
+}
+
+.plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 370px;
+    padding: 20px;
+    border-radius: 10px;
+    color: black;
+    background: hsl(225, 100%, 98%);
+}
+
+.img-music {
+    height: 60px;
+    width: auto;
+}
+
+.change {
+    color: var(--clr-2);
+    font-size: 15px;
+    font-weight: 700;
+
+}
+
+.change:hover {
+    text-decoration: none;
+    color: var(--clr-hov);
+}
+
+.btn {
+    background: var(--clr-2);
+    border-style: none;
+    border-radius: 10px;
+    padding: 15px;
+    width: 370px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 20px 50px -10px;
+}
+.btn:hover {
+    background: var(--clr-hov);
+    cursor: pointer;
+}
+
+.ptp {
+    color: white;
+}
+
+.ptp,
+.cancel {
+    text-decoration: none;
+    font-size: var(--fs-p);
+    font-weight: 700;
+}
+
+.info,
+.price {
+    font-weight: 500;
+}
+
+.info,
+.price,
+.cancel {
+    color: var(--clr-4);
+}
+
+.cancel {
+    padding-bottom: 35px;
+}
+
+.cancel:hover {
+    color: var(--clr-5);
+}
